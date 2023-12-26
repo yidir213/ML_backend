@@ -21,4 +21,6 @@ from projetml.views import TrainAPIView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('train/', TrainAPIView.as_view(), name='train'),
+    path('train/predict/', TrainAPIView.as_view(), name='pred'),
+
 ]
