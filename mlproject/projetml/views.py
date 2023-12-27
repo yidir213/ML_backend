@@ -65,7 +65,7 @@ class TrainAPIView(APIView):
     
     def post_pred(self,request):
         if cache.get('model') is None:
-            return Response({'error': 'Model not trained yet'}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'error': "Le Model n'est pas encore entrainé"}, status=status.HTTP_400_BAD_REQUEST)
         else:
             serializer=predSerializer(data=request.data)
             if serializer.is_valid():
