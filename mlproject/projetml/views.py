@@ -59,7 +59,7 @@ class TrainAPIView(APIView):
             accuracy1=classification_report(y_test, y_pred)
             accuracy=accuracy_score(y_test, y_pred)
             acc=f"{accuracy}\n\n {accuracy1}"
-            return Response({'accuracy':acc }, status=status.HTTP_200_OK)
+            return Response({'accuracy':f"{accuracy:2.f}" }, status=status.HTTP_200_OK)
         
        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
