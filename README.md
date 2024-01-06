@@ -8,3 +8,6 @@ To explore the details of this project, please refer to the `views.py` file. It 
 ## Testing with Frontend
 
 To test the integration of this backend with the frontend, click [here](https://yidir-ml-project.netlify.app/). The website utilizes this backend for its functionalities.
+
+
+**Flexibility:** The website is designed to handle different datasets beyond the Iris dataset and is adaptable to multiple machine learning classification models beyond SVM.
