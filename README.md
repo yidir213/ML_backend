@@ -11,3 +11,8 @@ To test the integration of this backend with the frontend, click [here](https://
 
 
 **Flexibility:** The website is designed to handle different datasets not only the Iris dataset and is adaptable to multiple other machine learning classification models other than SVM.
+
+### Note for First-Time Use of the website
+
+If you're using the site for the first time, please allow a few moments for the initial server response. The servers start up upon the first API call, so the initial access might take a bit longer as they initialize. Subsequent interactions will be more responsive once the server started.
+
